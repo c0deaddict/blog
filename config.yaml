@@ -1,0 +1,41 @@
+---
+baseurl: "http://home.codeaddict.org/"
+languageCode: "en-us"
+title: "c0deaddict"
+languagecode: "en-EN"
+metaDataFormat: "yaml"
+theme: "hyde-y"
+paginate: 10
+paginatePath: "page"
+disqusShortname: "c0deaddict"
+
+permalinks:
+  post: "/:year/:month/:day/:slug/"
+  code: "/:slug/"
+
+taxonomies:
+  tags: "tags"
+  topic: "topics"  
+
+author:
+  name: "Jos van Bakel"
+  email: "jos@codeaddict.org"
+
+params:
+  brand: "c0deaddict"
+  topline: "Hardcore nerd stuff"
+  sidebar: "left"
+  home: "Blog"
+  highlight: "default"
+  github: "c0deaddict"
+  linkedin: "josvanbakel"
+  twitter: "c0deaddict"
+
+blackfriday:
+  angledQuotes: true
+  fractions: false
+  hrefTargetBlank: false
+  latexDashes: true
+  plainIdAnchors: true
+  # extensions: []
+  # extensionmask: []
