@@ -15,7 +15,7 @@ permalinks:
 
 taxonomies:
   tags: "tags"
-  topic: "topics"  
+  topic: "topics"
 
 author:
   name: "Jos van Bakel"

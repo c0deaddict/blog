@@ -14,7 +14,7 @@ Recently I finished my second [Make-a-Lisp](https://github.com/kanaka/mal) (Mal)
 
 Following the 11 step incremental [process guide](https://github.com/kanaka/mal/blob/master/process/guide.md) you'll end up with your very own Lisp interpreter (which is powerful enough to be [self-hosting](https://github.com/kanaka/mal/tree/master/mal)). Along the way you learn a great deal about the programming language you’re implementing in. And, if you don’t know it yet, you discover the elegance and simplicity of Lisp.
 
-![Caution - Made with secret alien technology](/photos/LISP.png "http://www.lisperati.com/logo.html")
+![Caution - Made with secret alien technology](/img/make-a-lisp-in-elm/LISP.png "http://www.lisperati.com/logo.html")
 
 My first Mal implementation was in [Livescript](http://livescript.net/) (one of the many compile-to-JS languages). This time I wrote it in Elm, a [purely functional](https://en.wikipedia.org/wiki/Purely_functional_programming) [strong statically typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing) language (also compiles to JS). I thought a second implementation would be easier. Boy was I wrong.
 
@@ -116,7 +116,7 @@ Eval.andThen f e =
 
 Mal needs a mutable environment in step 3 of the process guide. Elm doesn’t do mutation. Now luckily a mutable environment can be simulated with a immutable environment. Each time a symbol is mutated, a copy of the environment is made but instead of copying the old value the new one is put in. This is what Elm’s core Dict does (it doesn’t exactly copy the whole old value but for this story lets assume it does).
 
-![Step 3 of the process guide](/photos/Mal_Step3.png "Step 3 of the process guide")
+![Step 3 of the process guide](/img/make-a-lisp-in-elm/Mal_Step3.png "Step 3 of the process guide")
 
 So far so good. The hard part is dealing with the tiny arrow in the upper right corner, the one called "outer" linking from one environment to the other. Elm is a pure language. That means all functions are side effect free. In other words: all values are immutable and no references or pointers are allowed. But we do need a pointer from each environment to it’s outer.
 
@@ -153,7 +153,7 @@ Implementing an interpreter for a language with mutable values and arbitrary sid
 
 What are Lispy languages? Judging by the the LOC in some Mal implementations, the top ones are the more Lispy languages:
 
-![Mal implementations](/photos/Mal%20implementations.png "Mal implementations")
+![Mal implementations](/img/make-a-lisp-in-elm/Mal%20implementations.png "Mal implementations")
 
 Elm has by far the most LOC. Although the comparing on LOC is not completely fair. I used elm-format to auto format the styling of all the source code. It results in a readable, consistent, but pretty verbose code style.
 
@@ -167,4 +167,4 @@ Elm was an excellent choice for the learning experience. It isn’t a very pract
 
 *On to the next language! Assembly maybe?*
 
-![xkcd LISP](/photos/xkcd_lisp.jpeg "https://xkcd.com/224/")
+![xkcd LISP](/img/make-a-lisp-in-elm/xkcd_lisp.jpeg "https://xkcd.com/224/")

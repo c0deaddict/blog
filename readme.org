@@ -1,0 +1,15 @@
+* My blog
+
+Source code for my blog. It is build with [[https://gohugo.io/][Hugo]] and hosted on [[https://www.netlify.com/][Netlify]].
+
+** Build
+
+#+begin_src bash
+nix run nixpkgs.hugo -c hugo
+#+end_src
+
+** Development
+
+#+begin_src bash
+nix run nixpkgs.hugo -c hugo server -D
+#+end_src

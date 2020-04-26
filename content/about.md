@@ -5,5 +5,4 @@ title = "about"
 
 +++
 
-## Heading
-Hello World!
+## Hello World!
