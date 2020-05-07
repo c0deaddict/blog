@@ -2,8 +2,8 @@
 date: "2020-04-26T20:19:00Z"
 draft: false
 title: "Using Rofi to switch Pulseaudio default sink/source"
-tags: ["rofi", "pulseaudio", "i3"]
-topics: ["rofi", "Pulseaudio", "i3"]
+tags: ["rofi", "pulseaudio", "i3", "nixos"]
+topics: ["i3", "nixos"]
 ---
 
 Lately I have to video call a lot for work. From time to time it
