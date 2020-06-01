@@ -7,7 +7,6 @@ metaDataFormat: "yaml"
 theme: "hyde"
 paginate: 10
 paginatePath: "page"
-disqusShortname: "c0deaddict"
 
 permalinks:
   post: "/:year/:month/:day/:slug/"
