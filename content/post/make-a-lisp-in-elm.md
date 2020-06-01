@@ -14,9 +14,9 @@ Recently I finished my second [Make-a-Lisp](https://github.com/kanaka/mal) (Mal)
 
 Following the 11 step incremental [process guide](https://github.com/kanaka/mal/blob/master/process/guide.md) you'll end up with your very own Lisp interpreter (which is powerful enough to be [self-hosting](https://github.com/kanaka/mal/tree/master/mal)). Along the way you learn a great deal about the programming language you’re implementing in. And, if you don’t know it yet, you discover the elegance and simplicity of Lisp.
 
-![Caution - Made with secret alien technology](/img/make-a-lisp-in-elm/LISP.png "http://www.lisperati.com/logo.html")
+![Caution - Made with secret alien technology](/img/make-a-lisp-in-elm/LISP.png "https://www.lisperati.com/logo.html")
 
-My first Mal implementation was in [Livescript](http://livescript.net/) (one of the many compile-to-JS languages). This time I wrote it in Elm, a [purely functional](https://en.wikipedia.org/wiki/Purely_functional_programming) [strong statically typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing) language (also compiles to JS). I thought a second implementation would be easier. Boy was I wrong.
+My first Mal implementation was in [Livescript](https://livescript.net/) (one of the many compile-to-JS languages). This time I wrote it in Elm, a [purely functional](https://en.wikipedia.org/wiki/Purely_functional_programming) [strong statically typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing) language (also compiles to JS). I thought a second implementation would be easier. Boy was I wrong.
 
 Why was it harder? This were the challenges:
 
