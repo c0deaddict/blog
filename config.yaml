@@ -4,7 +4,7 @@ languageCode: "en-us"
 title: "c0deaddict"
 languagecode: "en-EN"
 metaDataFormat: "yaml"
-theme: "hyde-y"
+theme: "hyde"
 paginate: 10
 paginatePath: "page"
 disqusShortname: "c0deaddict"
@@ -22,20 +22,16 @@ author:
   email: "jos@codeaddict.org"
 
 params:
-  brand: "c0deaddict"
-  topline: "Hardcore nerd stuff"
-  sidebar: "left"
-  home: "Blog"
-  highlight: "default"
-  github: "c0deaddict"
-  linkedin: "josvanbakel"
-  twitter: "c0deaddict"
+  description: "Random musings mostly about IT"
+  themeColor: "theme-base-0d"
 
-blackfriday:
-  angledQuotes: true
-  fractions: false
-  hrefTargetBlank: false
-  latexDashes: true
-  plainIdAnchors: true
-  # extensions: []
-  # extensionmask: []
+Menus:
+  main:
+    - Name: "About"
+      URL: "/about/"
+    - Name: "Github"
+      URL: "https://github.com/c0deaddict"
+    - Name: "LinkedIn"
+      URL: "https://linkedin.com/in/josvanbakel"
+    - Name: "Twitter"
+      URL: "https://twitter.com/c0deaddict"
