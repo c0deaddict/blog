@@ -48,8 +48,19 @@ pkgs.dockerTools.buildLayeredImage {
   config = {
     Cmd = [ "/bin/bash" ];
     WorkingDir = "/";
+    Env = [
+      "SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt"
+    ];
   };
 }
+```
+
+Test it by building it locally and loading it into Docker:
+
+```shell
+nix-build -o image.tar.gz
+docker load -i ./image.tar.gz
+docker run -it --rm k8s-deployer:latest
 ```
 
 ... and here is how to build it in Gitlab CI, and push it to the
